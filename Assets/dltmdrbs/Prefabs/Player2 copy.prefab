@@ -795,8 +795,7 @@ MonoBehaviour:
   AttackcoolTime: 0.2
   PlayerPoint: []
   PlayerPointindex: 0
-  smoke: {fileID: 1005800579108804, guid: 85c6699b6dab9b144bf2f559f8f8fff7, type: 3}
-  shootLight: {fileID: 0}
+  smoke: {fileID: 1005800579108804, guid: a8135bf47f6961b4aa4f491a030e2047, type: 3}
   smokePos: {fileID: 1489860749}
 --- !u!1 &7546019567205628066
 GameObject:
