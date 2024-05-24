@@ -48,12 +48,12 @@ public class ZombieSpawnner : MonoBehaviour
     void Spawn()
     {
 
-        if (SpawnCount >= 20)
+        if (SpawnCount >= 10)
         {
             int QuestionPrefabs = Random.Range(0, Question.Length);
             SpawnCount = 0;
             isQuestion = true;
-            Instantiate(Question[QuestionPrefabs], transform.position + new Vector3(1, 2, 0), Quaternion.identity);
+            Instantiate(Question[QuestionPrefabs], transform.position + new Vector3(0, 2, 0), Quaternion.identity);
             Invoke("QuestionTime", 7f);
         }
         if (SpawncurTime <= 0)

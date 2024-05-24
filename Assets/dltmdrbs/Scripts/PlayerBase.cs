@@ -14,11 +14,11 @@ public class PlayerBase : MonoBehaviour
     [SerializeField] protected Transform[] PlayerPoint;
     [SerializeField] protected int PlayerPointindex;
 
+
     protected float AttackcurTime;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
