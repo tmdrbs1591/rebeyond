@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &321014551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 321014552}
+  m_Layer: 6
+  m_Name: SmokePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &321014552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321014551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.49, z: 2.42}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8466957508186710273}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &824610387
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,6 +898,7 @@ Transform:
   - {fileID: 1308254021}
   - {fileID: 824610388}
   - {fileID: 8547758989402434939}
+  - {fileID: 321014552}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -947,6 +979,9 @@ MonoBehaviour:
   - {fileID: 824610388}
   - {fileID: 8547758989402434939}
   PlayerPointindex: 0
+  smoke: {fileID: 1005800579108804, guid: b5228327566dd7b42950677605733d7f, type: 3}
+  shootLight: {fileID: 0}
+  smokePos: {fileID: 321014552}
 --- !u!1 &8466957508237030567
 GameObject:
   m_ObjectHideFlags: 0

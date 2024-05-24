@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class PlayerBase : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class PlayerBase : MonoBehaviour
     [SerializeField] protected float AttackcoolTime = 0.5f;
     [SerializeField] protected Transform[] PlayerPoint;
     [SerializeField] protected int PlayerPointindex;
+    [SerializeField] protected GameObject smoke;
+    [SerializeField] protected Transform smokePos;
 
 
     protected float AttackcurTime;
@@ -40,6 +43,7 @@ public class PlayerBase : MonoBehaviour
         {
             if (Input.GetKey(Firekey))
             {
+                Destroy(Instantiate(smoke, smokePos.transform.position, transform.rotation),1f);
                 Destroy(Instantiate(Bullet, transform.position + new Vector3(0, 1f, 0.5f), transform.rotation * Quaternion.Euler(90, 0, 0)),2f);
                 AttackcurTime = AttackcoolTime;
             }
@@ -62,4 +66,5 @@ public class PlayerBase : MonoBehaviour
         //    PlayerPointindex++;
         //}
     }
+
 }

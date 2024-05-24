@@ -596,8 +596,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ed6aec445b46748a93577cbdb752ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 12
   CurHP: 5
+  blood: {fileID: 2596795573782885190, guid: a8ed511c80cefb54eaa28d1012c02dcb, type: 3}
+  deathEffect: {fileID: 3458033838109364893, guid: dd19de8d260a4544aaf59897fbe10b7c, type: 3}
 --- !u!54 &-4103981622283249719
 Rigidbody:
   m_ObjectHideFlags: 0
