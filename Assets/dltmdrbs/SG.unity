@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 939923767}
   - component: {fileID: 939923766}
   - component: {fileID: 939923765}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1068,7 +1068,7 @@ GameObject:
   - component: {fileID: 1551510583}
   - component: {fileID: 1551510582}
   - component: {fileID: 1551510581}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: rw (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1302,6 +1302,8 @@ MonoBehaviour:
   Question:
   - {fileID: 7369964632205902805, guid: d5cd6750ec14d374b9746d0703af38aa, type: 3}
   - {fileID: 7369964632205902805, guid: ded9bbdfdd294194c90861d87ce37dc3, type: 3}
+  - {fileID: 7369964632205902805, guid: ff87f3d6d891ac4449089ab79bd68bab, type: 3}
+  - {fileID: 7369964632205902805, guid: 62d6c2d410a6104439a949fdbf70a6d2, type: 3}
   spawnPoint: {fileID: 1274756554}
   SpawncoolTime: 1
   SpawnCount: 0

@@ -980,7 +980,6 @@ MonoBehaviour:
   - {fileID: 8547758989402434939}
   PlayerPointindex: 0
   smoke: {fileID: 1005800579108804, guid: b5228327566dd7b42950677605733d7f, type: 3}
-  shootLight: {fileID: 0}
   smokePos: {fileID: 321014552}
 --- !u!1 &8466957508237030567
 GameObject:
