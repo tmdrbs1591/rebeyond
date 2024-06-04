@@ -9,7 +9,7 @@ public class PlayerBase : MonoBehaviour
     [SerializeField] protected KeyCode leftkey;
     [SerializeField] protected KeyCode rightkey;
     [SerializeField] protected KeyCode Firekey;
-    [SerializeField] protected GameObject Bullet;
+    [SerializeField] protected GameObject bullet;
     [SerializeField] protected GameObject Player;
     [SerializeField] protected float AttackcoolTime = 0.5f;
     [SerializeField] protected Transform[] PlayerPoint;
@@ -19,22 +19,12 @@ public class PlayerBase : MonoBehaviour
 
 
     protected float AttackcurTime;
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
     protected void Move()
     {
         if (Input.GetKey(leftkey) && !Input.GetKey(rightkey))
             transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);
         else if (Input.GetKey(rightkey) && !Input.GetKey(leftkey))
             transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
-
     }
 
     protected void Fire()
@@ -44,7 +34,7 @@ public class PlayerBase : MonoBehaviour
             if (Input.GetKey(Firekey))
             {
                 Destroy(Instantiate(smoke, smokePos.transform.position, transform.rotation),1f);
-                Destroy(Instantiate(Bullet, transform.position + new Vector3(0, 1f, 0.5f), transform.rotation * Quaternion.Euler(90, 0, 0)),2f);
+                Destroy(Instantiate(bullet, transform.position + new Vector3(0, 1f, 0.5f), transform.rotation * Quaternion.Euler(90, 0, 0)),2f);
                 AttackcurTime = AttackcoolTime;
             }
         }
@@ -60,11 +50,5 @@ public class PlayerBase : MonoBehaviour
             Instantiate(Player, PlayerPoint[PlayerPointindex].transform.position , transform.rotation);
             PlayerPointindex++;
         } 
-        //if (other.gameObject.CompareTag("Notanswer"))
-        //{
-        //    Destroy(PlayerPoint[PlayerPointindex].gameObject);
-        //    PlayerPointindex++;
-        //}
     }
-
 }

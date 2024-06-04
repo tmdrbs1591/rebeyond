@@ -11,6 +11,8 @@ TagManager:
   - Notanswer
   - DestroyWall
   - Wall
+  - BlueBullet
+  - RedBullet
   layers:
   - Default
   - TransparentFX

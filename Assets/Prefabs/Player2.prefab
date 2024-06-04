@@ -950,7 +950,7 @@ MonoBehaviour:
   leftkey: 276
   rightkey: 275
   Firekey: 273
-  Bullet: {fileID: 5926999213743978438, guid: 963261d0640fdc843a2d2574fa205ad8, type: 3}
+  bullet: {fileID: 5926999213743978438, guid: 963261d0640fdc843a2d2574fa205ad8, type: 3}
   Player: {fileID: 7546019567115735873, guid: f4b3b4170c4d59841b6574fbc6381f64, type: 3}
   AttackcoolTime: 0.2
   PlayerPoint:

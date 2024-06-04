@@ -17,13 +17,34 @@ public class Zombie : MonoBehaviour
 
     void Update()
     {
-      
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        if (CurHP <= 0)
-        {
-            Destroy(gameObject);
-            Destroy(Instantiate(deathEffect, transform.position + new Vector3(0, 1, -1), transform.rotation), 2f);
+    }
 
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("BlueBullet"))
+        {
+            TakeDamage(1);
+            Debug.Log("Take Damage");
+            if (CurHP <= 0)
+            {
+                ScoreManager.Instance.Player1ScoreUp();
+                Destroy(gameObject);
+                Destroy(Instantiate(deathEffect, transform.position + new Vector3(0, 1, -1), transform.rotation), 2f);
+                Debug.Log("Die");
+            }
+        }
+        if (other.gameObject.CompareTag("RedBullet"))
+        {
+            TakeDamage(1);
+            Debug.Log("Take Damage");
+            if (CurHP <= 0)
+            {
+                ScoreManager.Instance.Player2ScoreUp();
+                Destroy(gameObject);
+                Destroy(Instantiate(deathEffect, transform.position + new Vector3(0, 1, -1), transform.rotation), 2f);
+                Debug.Log("Die");
+            }
         }
     }
     public void TakeDamage(float damage)

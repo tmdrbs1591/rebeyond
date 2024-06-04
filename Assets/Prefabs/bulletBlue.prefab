@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 7557979372225253060}
   - component: {fileID: 7557979372225253061}
   - component: {fileID: 7557979372225253062}
-  - component: {fileID: -4270468028094263198}
+  - component: {fileID: 834218086130450573}
   m_Layer: 0
   m_Name: bulletBlue
-  m_TagString: Untagged
+  m_TagString: BlueBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ CapsuleCollider:
   m_Height: 0.26155198
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-4270468028094263198
+--- !u!114 &834218086130450573
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
