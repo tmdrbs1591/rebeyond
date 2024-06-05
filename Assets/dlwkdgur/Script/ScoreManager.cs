@@ -25,12 +25,12 @@ public class ScoreManager : MonoBehaviour
 
     public void Player1ScoreUp()
     {
-        p1Score++;
+        p1Score += 100;
     }
     
     public void Player2ScoreUp()
     {
-        p2Score++;
+        p2Score+= 100;
     }
     
     public void Player1Score()
